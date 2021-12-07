@@ -1,0 +1,23 @@
+{
+  "Records": [
+    {
+      "messageId": "3ef73f1e-3af5-48c5-b852-076129375ebc",
+      "receiptHandle": "AQEBKj4MIKrzIcnKBPcRnitbYmsRR9lixY6vApNNXwZFqprQYMS2gwHI32plos47svurbEr+DTYveNR6moR6uDggVBMDb6MRWLb0RdpCA1csfTKBK7ObwyG/vwSPbw4caVpBSI017td13Vyqfa+5MYUuDszpY2Nn7qClOUrXM55826cqfGT/5mU134Gd8oarLcHsIn1sOl1xsqHsaqtIUwqYgiU8wi0mVNL9XO44FYS4G9Gu2m+PrpMGPo5X5mq8PW4jouL5D0dI/D5/H1LZUGwbTEoipzG0Qgsb750VRYIWMPw=",
+      "body": "{\"id\": \"1242\", \"stock_code\": \"MANGO\", \"qty\": 2, \"type\": \"sold\"}",
+      "attributes": {
+        "ApproximateReceiveCount": "1",
+        "SentTimestamp": "1638861177026",
+        "SequenceNumber": "18866292535028207616",
+        "MessageGroupId": "inventory",
+        "SenderId": "AIDA4UDC4QKHTH4V7A3RU",
+        "MessageDeduplicationId": "1242",
+        "ApproximateFirstReceiveTimestamp": "1638861177026"
+      },
+      "messageAttributes": {},
+      "md5OfBody": "41125b57c2ed96cc329a3a6c6e75b19f",
+      "eventSource": "aws:sqs",
+      "eventSourceARN": "arn:aws:sqs:us-east-2:867790783119:gk_inventory_queue.fifo",
+      "awsRegion": "us-east-2"
+    }
+  ]
+}
