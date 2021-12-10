@@ -46,3 +46,15 @@ print all the python installed package into requirements.txt
 pip freeze > requirements.txt
 ```
 
+
+
+add below line in handler.py
+
+```
+import requests
+def lambda_handler(event, context):   
+    response = requests.get("https://example.com/")
+    print(response.text)
+    return response.text
+```
+
