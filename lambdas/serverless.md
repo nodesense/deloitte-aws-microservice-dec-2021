@@ -58,3 +58,48 @@ def lambda_handler(event, context):
     return response.text
 ```
 
+
+
+packages deployed without dependencies , it won't work..
+
+```
+sls deploy
+```
+
+
+now, we need to have serverless to bundle all python dependencies..
+
+create package.json [node.js dependencies ]
+
+```
+    npm init -y
+```
+
+download plugin for servess to bundle python requirements packages in zip file
+
+```
+npm install --save serverless-python-requirements
+```
+
+patch your serverless.yml file to add the plugin..
+
+at end of serverless.yml file, add below [no indentation for plugins, custom]
+
+```
+plugins:
+  - serverless-python-requirements
+```
+
+
+ensure funstions in serverless matches the name in python module..
+
+handler: handler.lambda_handler
+
+
+
+```
+sls deploy
+```
+
+
+now check lambda, has all python dependencies from requirements.txt packaged..
