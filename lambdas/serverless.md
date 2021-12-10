@@ -103,3 +103,7 @@ sls deploy
 
 
 now check lambda, has all python dependencies from requirements.txt packaged..
+
+```
+sls invoke -f example_request
+```
