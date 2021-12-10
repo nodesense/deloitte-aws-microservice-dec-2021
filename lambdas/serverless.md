@@ -2,6 +2,11 @@
 Open miniconda command prompt
 
 ```
+npm install -g serverless
+```
+
+
+```
 cd aws
 ```
 
